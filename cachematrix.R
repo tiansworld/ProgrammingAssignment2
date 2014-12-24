@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## Two functions below are used to create a special object that 
 ## stores a matrix and cache its inverse matrix.
 
@@ -36,7 +33,7 @@ cacheSolve <- function(x, ...) {
         return(i)
     }
     data <- x$get()  ## if the !is.null(i) is not met, 
-    i <- solve(data,...)
+    i <- solve(data)
     x$setinverse(i)
     i
 }
